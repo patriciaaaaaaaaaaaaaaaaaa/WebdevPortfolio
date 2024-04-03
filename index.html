@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PatWeb</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7923868837.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="assets/Logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <!-- <img src="assets/home.png" class="home"> -->
+                    <h1><span>Name:</span> Patricia Mae Q. Quiatchon</h1>
+                    <p><span>Age:</span> 20 years old</p>
+                    <p><span>Course:</span> Bachelor of Science in Information Technology</p>
+                    <p><span>Speacilization:</span> Web Development</p>
+                    <p><span>Goals:</span> Explore new ideas and learn in making website</p>
+                    <p><span>Philosophy of Education:</span>Understanding and knowledge through my<br>
+                    experience. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/p3.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>A student of Holy Angel University and I am taking the course of
+                            Bachelor of Science in Information Technology with a speacilization in
+                            Web Development.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('transcripts')">Transcripts</p>
+                            <p class="tab-links" onclick="opentab('professional affiliations')">Professional Affiliations</p>
+                            <p class="tab-links" onclick="opentab('awards')">Honors/Awards</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>Elementary (2007-2015)</span><br> Basa Air Base Elementary School</li>
+                                <li><span>Secondary (2015-2021)</span><br>Basa Air Base National HighSchool<br> Basa Air Base Senior HighSchool</li>
+                                <li><span>College (2021-2025)</span><br>Holy Angel University</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><h3>Python</h3>
+                                    <span class="bar"><span class="python"></span></span>
+                                </li>
+                                <li><h3>Java</h3>
+                                    <span class="bar"><span class="java"></span></span>
+                                </li>
+                                <li><h3>Html</h3>
+                                    <span class="bar"><span class="html"></span></span>
+                                </li>
+                                <li><h3>Css</h3>
+                                    <span class="bar"><span class="css"></span></span>
+                                </li>
+                                <li><h3>Javascript</h3>
+                                    <span class="bar"><span class="javascript"></span></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="transcripts">
+                            <ul>
+                                <li><a href="assets/Grades.pdf" class="btn">Image</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="professional affiliations">
+                            <ul>
+                                <li><a href="assets/Certficates.pdf" class="btn">Image</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="awards">
+                            <ul>
+                                <li><a href="assets/awards.pdf" class="btn">Image</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>procedure for developing and producing a website's functional design, structure, and visual layout.
+                             It includes many different fields and abilities, including as content development, coding, visual design,
+                              user interface (UI) design, and user experience (UX) design.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>UI Design</h2>
+                        <p>procedure for developing and producing a website's functional design, structure, and visual layout. 
+                            It includes many different fields and abilities, including as content development, coding, visual design, 
+                            user interface (UI) design, and user experience (UX) design.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="assets/project1.png" >
+                        <div class="layer">
+                            <h3>Amazin Glazin</h3>
+                            <p>This website is for those people who loves sweets with love. We now spend our days 
+                                making our clients happy by providing them with high-quality baked goods, first-rate customer service,
+                                and a sense of fun. They claim that we provide them joy.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/project2.png" >
+                        <div class="layer">
+                            <h3>The 1901 Cafe</h3>
+                            <p>The 1901 Cafe is the first countryside-inspired coffee shop in the province of Pampanga, established by Sophia Matawaran. 
+                                  The “19” stands for her age when she started this venture and the “01” represents as the first small step; it reminds that 
+                                  everything begins with a fresh slate.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/project3.png" >
+                        <div class="layer">
+                            <h3>PD Portfolio</h3>
+                            <p>A collaboration portfolio with my classmate Denise Santos</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/project4.png" >
+                        <div class="layer">
+                            <h3>Heavenly Glow Salon</h3>
+                            <p>Discover the epitome of beauty and wellness at Heavenly Glow Salon. 
+                                From cutting-edge hair services to soothing hair spa treatments, we 
+                                offer it all. Experience your best self with us!</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="assets/project5.png" >
+                        <div class="layer">
+                            <h3>House of Petals</h3>
+                            <p>Offer fresh flowers</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> contact@</p>
+                        <p><i class="fa-solid fa-phone"></i> 123456789</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <a href="assets/Quiatchon_Creative Resume.pdf" download class="btn btn2">Download CV</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Patricia <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function clossmenu(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
